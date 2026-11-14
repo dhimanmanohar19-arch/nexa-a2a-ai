@@ -76,5 +76,17 @@ document.getElementById("mic")
       askRobot();
     };
     recognition.start();
+  });SpeechRecognition();
+    recognition.lang = "hi-IN";
+    recognition.start();
+
+    recognition.onresult = function(event) {
+      messageInput.value = event.results[0][0].transcript;
+      sendMessage();
+    };
   });
+}
+
+console.log("NEXA A2A AI loaded successfully!");
+
 
