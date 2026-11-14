@@ -1,1 +1,88 @@
+CSS
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #071426;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #00e5ff;
+}
+
+.robot {
+  font-size: 90px;
+  margin: 20px;
+  filter: drop-shadow(0 0 15px #00e5ff);
+}
+
+#status {
+  color: #00ff99;
+  margin: 15px;
+}
+
+#chat {
+  background: #10243d;
+  border-radius: 15px;
+  padding: 15px;
+  min-height: 220px;
+  max-height: 350px;
+  overflow-y: auto;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.bot-message,
+.user-message {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.bot-message {
+  background: #16415c;
+}
+
+.user-message {
+  background: #075b51;
+  text-align: right;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #00cfe8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00ffbb;
+}
 
